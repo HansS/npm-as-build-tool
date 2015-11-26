@@ -4,7 +4,7 @@
   "description": "Use Npm as a build tool",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test -u bdd -R spec"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/HansS/npm-as-build-tool/issues"
   },
-  "homepage": "https://github.com/HansS/npm-as-build-tool#readme"
+  "homepage": "https://github.com/HansS/npm-as-build-tool#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^7.1.1",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "koa": "^1.1.2"
+  }
 }
